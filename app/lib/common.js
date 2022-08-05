@@ -4,6 +4,8 @@ var highlight = require('highlight.js')
 var yaml = require('js-yaml')
 var _ = require('lodash')
 
+if (typeof(cheerio) != 'function') cheerio = require('cheerio').default
+
 const SUPPORTED_MIME_TYPES = [
   'text/plain',
   'application/json',
